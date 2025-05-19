@@ -15,7 +15,11 @@ import br.unifor.model.Filme;
 @RequestMapping("/filmes")
 public class LocadoraController {
     private ArrayList<Filme> filmes = new ArrayList<>();
-    public LocadoraController(){}
+    public LocadoraController(){
+        filmes.add(new Filme(1, "Thunderbolts", "Ação", "Longo, Marvel né..."));
+        filmes.add(new Filme(2, "Moana 2", "Aventura", "Média, Disney..."));
+        filmes.add(new Filme(3, "Forrest Gump", "Drama", "2hs"));
+    }
 
     @GetMapping
     public String listarFilmes() {

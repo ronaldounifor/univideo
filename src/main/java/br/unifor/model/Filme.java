@@ -6,6 +6,12 @@ public class Filme {
     private String genero;
     private String duracao;
     
+    public Filme(int id, String nome, String genero, String duracao) {
+        this.id = id;
+        this.nome = nome;
+        this.genero = genero;
+        this.duracao = duracao;
+    }
     public int getId() {
         return id;
     }
